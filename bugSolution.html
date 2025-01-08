@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correct use of insertAdjacentHTML to prepend content
+    document.getElementById("myDiv").insertAdjacentHTML('afterbegin', "<p>This paragraph is added at the beginning.</p>");
+  </script>
+</body>
+</html>
